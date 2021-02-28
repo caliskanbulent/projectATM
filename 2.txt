@@ -1,0 +1,8 @@
+1	withdraw			Sun Feb 28 22:50:55 2021	0	0
+2	deposit				Sun Feb 28 22:51:05 2021	0	2500
+3	deposit				Sun Feb 28 22:51:27 2021	2500	2750
+4	withdraw			Sun Feb 28 22:51:34 2021	2750	2200
+5	deposit				Sun Feb 28 22:51:41 2021	2200	2400
+6	withdraw			Sun Feb 28 22:51:45 2021	2400	2300
+7	deposit				Sun Feb 28 22:56:37 2021	0	100
+8	deposit				Sun Feb 28 22:57:38 2021	100	2400

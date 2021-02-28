@@ -1,0 +1,3 @@
+1	Bulent	Caliskan	1234	grvenhout/21/Uddel	caliskanbulent283@gmail.com	1750	
+2	Islam	Duger	4321	straat/67/Zaandam	islamd@gmmail.com	2400	
+3	Asya	Gokcen	2222	jousefstraat/20/Tiel	asya@gmail	5000	
