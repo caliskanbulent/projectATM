@@ -44,4 +44,24 @@ The details of the project are as follows.
             User can change every information of him/her except balance
             User can delete account
       Log out
+  
+  Use Case Diagram  
+  
+  As seen in the Use Case Diagram,
+  when the customer comes to the ATM, 
+  customer should be able to use options such as withdraw money, edit information, show history.
+  
+  
+  ![image](https://user-images.githubusercontent.com/55192161/109810844-561ace00-7c2a-11eb-9fc4-bac93c5b4927.png)
 
+   
+   
+   
+   
+   
+   Class Diagram
+   You see the class diagram of the ATM project.
+
+
+
+![image](https://user-images.githubusercontent.com/55192161/109810332-b2c9b900-7c29-11eb-85b6-bae429156d13.png)
