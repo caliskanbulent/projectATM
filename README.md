@@ -1,3 +1,9 @@
+In this project,
+With this project, you will be able to deposit and withdraw money to your account. 
+You will be able to view the history of the money you have invested and withdrawn. 
+You will also have the opportunity to change all your information with the edit button. 
+The details of the project are as follows.
+
 # projectATM
 ******************Project Details*********************
 **Class
