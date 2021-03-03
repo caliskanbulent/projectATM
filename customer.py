@@ -76,10 +76,8 @@ class Customer:
                 else:
                     print('ERROR: Wrong choice')
                     self.edit(self.accounts_list)
-
     def clear_screen(self):
         os.system('cls')
-        print()
 
     def print_process(self, process):
         date = '{}'.format(process[2:7])
@@ -160,30 +158,17 @@ class Customer:
 
         input('\nPress Enter to go back..')
 
-    def login(self, acc_list):
-        self.login_id = input('Please, Enter your info=\n>>ID: ')
-        self.login_password = input('>>Password: ')
-        found = False
-        for account in acc_list:
+    def login(self, id,pin):
+        self.login_id = id
+        self.login_password = pin
+
+        for account in self.accounts_list:
             if account[0] == self.login_id and account[3] == self.login_password:
-                found = True
-                self.menu2(account)
-                break
+                return True
             else:
-                continue
+                return False
 
-        if not found:
-            self.clear_screen()
-            print('Wrong ID or Password')
-            self.login(acc_list)
 
-        else:
-            acc_file = open('Accounts.txt', 'w')
-            print('Saving changes...')
-            for acc in acc_list:
-                for elements in acc:
-                    acc_file.write("%s	" % elements)
-                acc_file.write('\n')
 
     def create_account(self, ls):
         self.account_name = input('Enter Your Name: ')
@@ -215,28 +200,31 @@ class Customer:
 
     def menu2(self, account):
         print("\n---------Hello, {0}--------- ".format(account[1]))
-        while True:
-            ch = int(input(
-                "\n1) show info \n2) show process history\n3) deposit\n4) withdraw\n5) Edit\n6)logout\n\nchoice>> "))
-            self.clear_screen()
-            if ch == 1:
-                print(
-                    "ID: {}\nName: {}\nSurname: {}\nAdress: {}\nMail: {}\nBalance: {}\n".format(account[0], account[1],
-                    account[2], account[4],account[5], account[6]))
+        try:
+            while True:
+                ch = int(input(
+                    "\n1) show info \n2) show process history\n3) deposit\n4) withdraw\n5) Edit\n6)logout\n\nchoice>> "))
+                self.clear_screen()
+                if ch == 1:
+                    print(
+                        "ID: {}\nName: {}\nSurname: {}\nAdress: {}\nMail: {}\nBalance: {}\n".format(account[0], account[1],
+                        account[2], account[4],account[5], account[6]))
 
-            elif ch == 2:
-                self.show_history(account)
-            elif ch == 3:
-                self.deposit(account)
-            elif ch == 4:
-                self.withdraw(account)
-            elif ch == 5:
-                self.edit(self.accounts_list)
-            elif ch == 6:
-                break
-            else:
-                print("ERROR: Wrong choice\n")
-
+                elif ch == 2:
+                    self.show_history(account)
+                elif ch == 3:
+                    self.deposit(account)
+                elif ch == 4:
+                    self.withdraw(account)
+                elif ch == 5:
+                    self.edit(self.accounts_list)
+                elif ch == 6:
+                    break
+                else:
+                    print("ERROR: Wrong choice\n")
+        except:
+            print("Please choose! ")
+            self.menu2(account)
     def run(self):
         count = True
         while count:
