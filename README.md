@@ -45,7 +45,7 @@ The details of the project are as follows.
             User can delete account
       Log out
   
-  Use Case Diagram  
+                                     Use Case Diagram  
   
   As seen in the Use Case Diagram,
   when the customer comes to the ATM, 
@@ -59,9 +59,15 @@ The details of the project are as follows.
    
    
    
-   Class Diagram
+                                           Class Diagram
    You see the class diagram of the ATM project.
 
 
 
 ![image](https://user-images.githubusercontent.com/55192161/109810332-b2c9b900-7c29-11eb-85b6-bae429156d13.png)
+
+
+
+                                              Screen 
+
+![image](https://user-images.githubusercontent.com/55192161/109811730-82831a00-7c2b-11eb-9c5b-7f197e0c8ef6.png)
